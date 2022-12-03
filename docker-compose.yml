@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  webserver:
+    image: phpstorm/php-71-apache-xdebug
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
