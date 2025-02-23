@@ -33,6 +33,7 @@
   <img alt="Kali Linux" src="https://img.shields.io/badge/-Kali Linux-557C94?style=flat-square&logo=Kali Linux&logoColor=white" />
   <img alt="MariaDB" src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white" />
   <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" />
+  <img alt="Kotlin" src="https://img.shields.io/badge/-Kotlin-650573?style=flat-square&logo=Kotlin&logoColor=white" />
   <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white" />
 </p>
 
