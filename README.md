@@ -22,7 +22,6 @@
   <img alt="ubuntu" src="https://img.shields.io/badge/-ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
   <img alt="Kali Linux" src="https://img.shields.io/badge/-Kali Linux-557C94?style=flat-square&logo=Kali Linux&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-368AFF?style=flat-square&logo=MySQL&logoColor=white" />
-  <img alt="Microsoft SQL Server" src="https://img.shields.io/badge/-Microsoft SQL Server-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white&v=1" />
   <img alt="Oracle" src="https://img.shields.io/badge/-Oracle-FF4848?style=flat-square&logo=Oracle&logoColor=white" />
   <img alt="PHP" src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=PHP&logoColor=white" />	
   <img alt="Laravel" src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=Laravel&logoColor=white" />
