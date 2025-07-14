@@ -20,7 +20,6 @@
   <img alt="Deno" src="https://img.shields.io/badge/-Deno-000000?style=flat-square&logo=Deno&logoColor=white" />
   <img alt="Linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=Linux&logoColor=white" />
   <img alt="ubuntu" src="https://img.shields.io/badge/-ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
-  <img alt="Kali Linux" src="https://img.shields.io/badge/-Kali Linux-557C94?style=flat-square&logo=Kali Linux&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-368AFF?style=flat-square&logo=MySQL&logoColor=white" />
   <img alt="Microsoft SQL Server" src="https://img.shields.io/badge/-Microsoft SQL Server-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white" />
   <img alt="Oracle" src="https://img.shields.io/badge/-Oracle-FF4848?style=flat-square&logo=Oracle&logoColor=white" />
