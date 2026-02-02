@@ -1,33 +1,204 @@
-<h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
+# 배동균
+## 비즈니스 가치를 실현하는 Backend Developer
+11년 10개월 경력 | 롯데카드 IT서비스개발팀
 
+---
 
-<p>Welcome to my page!
-<p>
-  <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="Google Cloud Platform" src="https://img.shields.io/badge/-Google_Cloud_Platform-1a73e8?style=flat-square&logo=google-cloud&logoColor=white" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="GraphQL" src="https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="NestJs" src="https://img.shields.io/badge/-NestJs-ea2845?style=flat-square&logo=nestjs&logoColor=white" />
-  <img alt="angular" src="https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
-  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img alt="Python" src="https://img.shields.io/badge/-Python-FFFFFF?style=flat-square&logo=Python" />
-  <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
-  <img alt="Deno" src="https://img.shields.io/badge/-Deno-000000?style=flat-square&logo=Deno&logoColor=white" />
-  <img alt="Linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=Linux&logoColor=white" />
-  <img alt="ubuntu" src="https://img.shields.io/badge/-ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
-  <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-368AFF?style=flat-square&logo=MySQL&logoColor=white" />
-  <img alt="Oracle" src="https://img.shields.io/badge/-Oracle-FF4848?style=flat-square&logo=Oracle&logoColor=white" />
-  <img alt="PHP" src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=PHP&logoColor=white" />	
-  <img alt="Laravel" src="https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=Laravel&logoColor=white" />
-  <img alt="PyPI" src="https://img.shields.io/badge/-PyPI-3775A9?style=flat-square&logo=PyPI&logoColor=white" />
-  <img alt="Anaconda" src="https://img.shields.io/badge/-Anaconda-44A833?style=flat-square&logo=Anaconda&logoColor=white" />
-  <img alt="MariaDB" src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white" />
-  <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white" />
-  <img alt="Kotlin" src="https://img.shields.io/badge/-Kotlin-650573?style=flat-square&logo=Kotlin&logoColor=white" />
-  <img alt="Spring" src="https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white" />
-</p>
+## 💼 Current Role
+**롯데카드 채널 서비스 개발 (2023.10 ~ 현재)**
+- 트래블/모빌리티 서비스 설계 및 구축
+- Webflux 기반 비동기 API 아키텍처 설계
+- 대용량 상품 데이터 검색 시스템 구축
 
+---
+
+## 🚀 핵심 프로젝트
+
+### 1. 롯데카드 트래블 서비스 구축 ⭐ 대표 프로젝트
+
+**프로젝트 개요**
+- 기간: 2024년
+- 파트너: Hopper (항공/호텔/렌터카), 하나투어
+- 역할: 백엔드 설계 및 핵심 API 개발 (팀 6명)
+
+**기술적 도전과 해결**
+
+#### 문제 1: 외부 API 연동 지연
+- **상황**: Hopper API 호출 시 응답 대기로 인한 전체 프로세스 지연
+- **해결**: Spring Webflux 비동기 논블로킹 설계 적용
+```
+  동기 방식: 항공(7초) + 호텔(4초)  = 11초
+  비동기 방식: Max(7초, 4초) = 7초 (36% 개선)
+```
+- **성과**: API 응답시간 대폭 단축, 사용자 경험 개선
+
+#### 문제 2: 대량 상품 데이터 조회 성능
+- **상황**: 수만 건의 항공/호텔 상품 실시간 검색 필요
+- **해결**: 
+  - **Elasticsearch**: 상품 메타데이터 인덱싱 및 빠른 검색
+  - **Redis**: 인기 검색어 및 자주 조회되는 상품 캐싱
+  - 외부 API 부하 최소화 전략
+- **성과**: DB 부하 70% 감소, 검색 응답 속도 향상
+
+#### 문제 3: 개발 생산성 및 코드 일관성
+- **도전**: 여러 외부 API 연동으로 인한 중복 코드 증가
+- **해결**: **Webflux 기반 공통 보일러플레이트 구조 설계**
+  - 공통 에러 핸들링 추상화
+  - API 호출 템플릿 패턴 적용
+  - 재사용 가능한 모듈 구조 설계
+- **성과**: 
+  - 신규 API 연동 시간 50% 단축
+  - 팀 내 코드 일관성 확보
+  - 유지보수성 향상
+
+**인프라 & 모니터링**
+- **ELK Stack**: 실시간 로그 수집 및 분석 체계 구축
+- **Kubernetes**: 컨테이너 기반 배포 및 오토스케일링
+- **Oracle DB**: 예약/결제 트랜잭션 데이터 관리
+
+**비즈니스 임팩트**
+✅ 롯데카드 여행 플랫폼 성공적 런칭  
+✅ 다중 파트너 연동 아키텍처 확립  
+✅ 향후 여행 상품 확장 기반 마련
+
+**기술 스택**
+`Java` `Spring Boot` `Webflux` `Oracle` `Redis` `Elasticsearch` `Kubernetes` `ELK Stack`
+
+---
+
+### 2. 모빌리티 고속/시외버스 연동 서비스
+
+**프로젝트 개요**
+- 기간: 2024년
+- 파트너: 티머니, 이즐의 즐거움
+- 역할: 결제 프로세스 개발 (팀 3명)
+
+**핵심 성과**
+
+#### 실시간 예매/결제 시스템 구축
+- 티머니/이즐 API 연동을 통한 실시간 고속/시외버스 예매
+- 결제, 취소, 환불 전 프로세스 API 인터페이스 개발
+- 트랜잭션 정합성 보장 로직 구현
+
+#### 성능 최적화
+**문제**: 터미널 및 배차 노선 정보 조회 시 외부 API 반복 호출로 인한 지연
+**해결**: Redis 기반 캐싱 전략 도입
+- 터미널 정보: 1일 TTL
+- 노선 정보: 6시간 TTL
+- 실시간 배차: 5분 TTL
+
+**결과**
+✅ 외부 API 호출 80% 감소  
+✅ 평균 응답 시간 300ms → 50ms  
+✅ 서버 부하 대폭 감소
+
+**기술 스택**
+`Java` `Spring` `Oracle` `Redis` `Kubernetes`
+
+---
+
+## 💡 이전 주요 경력
+
+### 해커스어학원 (2018.03 ~ 2023.09, 5년 7개월)
+**웹개발5팀 파트장**
+
+**주요 프로젝트**
+1. **통합 앱 REST API 개발**
+   - 영어/공무원/경찰/소방 등 다수 사이트 데이터 통합
+   - 공통 REST API 설계 및 표준화
+   - 1인 개발로 전체 API 아키텍처 구축
+
+2. **AWS 서버 마이그레이션**
+   - 온프레미스 → AWS 클라우드 전환 (팀 3명)
+   - Redis 기반 세션 클러스터링 구축
+   - 무중단 배포 환경 구축
+
+3. **Firebase PUSH 관리 시스템**
+   - 대량 앱 푸시 발송 시스템 개발
+   - Firebase API 연동
+   - 발송 스케줄링 및 통계 대시보드
+
+**성과**
+- 슬로우 쿼리 튜닝으로 DB 성능 개선
+- 서비스 안정성 확보 및 트래픽 처리 능력 향상
+
+---
+
+### 글로벌 프로젝트 경험 (중국 6개월)
+**메디앤코리아 O2O 쇼핑몰 & ERP 구축 (2016~2017)**
+
+- 중국 항저우 현지 파견 근무
+- WeChat 로그인/결제 시스템 연동
+- Java 기반 ERP와 물류 시스템 연동 모듈 개발
+- 중국 통관 시스템 연동
+- 현지 개발팀과 협업 (언어 장벽 극복)
+
+**핵심 경험**
+- AWS 사용 불가 환경에서 중국 자체 클라우드 활용
+- 글로벌 비즈니스 환경에서의 기술적 문제 해결
+- 다국적 팀과의 협업 및 커뮤니케이션
+
+---
+
+## 🛠 기술 스택
+
+### Backend
+**Language**: Java, PHP, Python, JavaScript  
+**Framework**: Spring Boot (Webflux), Spring MVC, Laravel, CodeIgniter
+
+### Database & Cache
+Oracle, MySQL, MSSQL, Redis, Elasticsearch
+
+### Infrastructure
+Kubernetes, AWS, Linux, Docker, ELK Stack
+
+### Tools
+Git, Jira, Firebase
+
+---
+
+## 🎯 강점
+
+### 1. 비동기 아키텍처 설계 경험
+- Webflux 기반 고성능 API 설계
+- 외부 연동 최적화 및 응답 시간 단축
+
+### 2. 대용량 데이터 처리
+- Elasticsearch 기반 검색 시스템 구축
+- Redis 캐싱 전략 수립 및 적용
+
+### 3. 보일러플레이트 설계 능력
+- 재사용 가능한 공통 모듈 아키텍처 구축
+- 개발 생산성 향상 및 코드 품질 개선
+
+### 4. 1인 개발부터 대규모 팀 협업까지
+- 소규모: 1인 개발로 전체 시스템 구축 경험
+- 대규모: 6명 팀에서 핵심 개발자로 활약
+
+### 5. 글로벌 프로젝트 경험
+- 중국 현지 파견 근무 6개월
+- 다국적 개발팀과의 협업 경험
+
+---
+
+## 📈 커리어 여정
+```
+2013년 - 비윈컴즈 (웹개발 시작)
+   ↓
+2015년 - 정보보안 교육 이수
+   ↓
+2016-2017년 - 중국 해외 파견 (글로벌 경험)
+   ↓
+2018-2023년 - 해커스 (AWS 마이그레이션, API 표준화)
+   ↓
+2023년~ - 롯데카드 (대규모 트래블/모빌리티 플랫폼)
+```
+
+**핵심 성장 키워드**: PHP → Java/Spring → Webflux 비동기 → 대규모 시스템
+
+---
+
+## 📫 Contact
+Email: [이메일]  
+GitHub: [깃헙]  
+Blog: [블로그]
