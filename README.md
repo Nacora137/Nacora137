@@ -199,6 +199,4 @@ Git, Jira, Firebase
 ---
 
 ## 📫 Contact
-Email: [이메일]  
-GitHub: [깃헙]  
-Blog: [블로그]
+GitHub: bdg407@gmail.com  
