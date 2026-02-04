@@ -1,5 +1,4 @@
-# 배동균
-## 비즈니스 가치를 실현하는 Backend Developer
+## Backend Developer
 11년 10개월 경력 | 롯데카드 IT서비스개발팀
 
 ---
