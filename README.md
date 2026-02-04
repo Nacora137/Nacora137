@@ -142,7 +142,7 @@
 ## 🛠 기술 스택
 
 ### Backend
-**Language**: Java, PHP, Python, JavaScript  
+**Language**: Java, Python, PHP, JavaScript  
 **Framework**: Spring Boot (Webflux), Spring MVC, Laravel, CodeIgniter
 
 ### Database & Cache
